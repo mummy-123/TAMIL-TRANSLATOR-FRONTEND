@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FB">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TITLE -->
+        <TextView
+            android:text="AI Grammar Check"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- AI ASSIST CARD -->
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="#C63DD9"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="AI Assist"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Get intelligent grammar suggestions"
+                android:textColor="#F3E5F5"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- INPUT -->
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_marginTop="16dp"
+            android:hint="Enter text to check grammar..."
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"/>
+
+        <!-- CHECK BUTTON -->
+        <Button
+            android:id="@+id/btnCheck"
+            android:text="Check Grammar"
+            android:textColor="#FFFFFF"
+            android:background="#7C4DFF"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+
+        <!-- RESULT -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:text="Suggestions will appear here"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- APPLY -->
+        <Button
+            android:id="@+id/btnApply"
+            android:text="Apply"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- MORE AI FEATURES -->
+        <TextView
+            android:text="More AI Features"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnContext"
+                android:text="Context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnExamples"
+                android:text="Examples"
+                android:layout_marginStart="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnPronounce"
+                android:text="Pronounce"
+                android:layout_marginStart="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!-- Center white card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="28dp" android:layout_marginEnd="28dp" android:layout_marginTop="48dp" android:layout_marginBottom="48dp">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <!-- circular pale background with icon on top -->
+            <FrameLayout
+                android:layout_width="120dp" android:layout_height="120dp" android:layout_marginTop="10dp">
+
+                <View
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@drawable/circle_bg_light" />
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="56dp" android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_book"
+                    android:contentDescription="icon"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Why This App?"
+                android:layout_marginTop="18dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Bridge the language gap between English and Tamil with instant, accurate translations powered by advanced AI technology"
+                android:textSize="13sp"
+                android:textColor="@color/muted_text"
+                android:gravity="center"
+                android:paddingStart="12dp" android:paddingEnd="12dp"
+                android:layout_marginTop="12dp"/>
+
+            <View android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:text="Next"
+                android:backgroundTint="@color/accent_blue"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/poppins_medium"/>
+            <TextView
+                android:id="@+id/tvSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/muted_text"
+                android:padding="6dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

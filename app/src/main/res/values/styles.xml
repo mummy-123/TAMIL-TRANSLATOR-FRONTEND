@@ -1,0 +1,9 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+    </style>
+    <style name="CardRounded">
+        <item name="android:background">@drawable/card_rounded</item>
+    </style>
+</resources>

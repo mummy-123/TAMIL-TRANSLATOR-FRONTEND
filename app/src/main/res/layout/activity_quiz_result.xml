@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F7FA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2563EB"
+        android:title="Quiz Results"
+        android:titleTextColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:padding="24dp"
+        android:background="@drawable/bg_green_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:text="85%"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:text="Home"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:text="Try Again"
+        android:backgroundTint="#2563EB"
+        android:textColor="@android:color/white"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</LinearLayout>

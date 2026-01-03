@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F8FC"
+    android:fitsSystemWindows="true">
+
+    <!-- Top App Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#EC4899"
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="English → Tamil"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Source Language -->
+            <TextView
+                android:text="English"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etSourceText"
+                android:hint="Type or paste text here..."
+                android:minHeight="120dp"
+                android:gravity="top"
+                android:background="@drawable/bg_text_box"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Swap Button -->
+            <ImageButton
+                android:id="@+id/ivSwap"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_circle_pink"
+                android:src="@drawable/ic_swap"
+                android:padding="16dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp" />
+
+            <!-- Target Language -->
+            <TextView
+                android:text="Tamil"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Translation Output -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/bg_translation_box"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTamilText"
+                    android:text="Translation will appear here..."
+                    android:textColor="#888"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/ivSpeaker"
+                    android:src="@drawable/ic_speaker"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <ImageView
+                    android:id="@+id/ivCopy"
+                    android:src="@drawable/ic_copy"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+            </LinearLayout>
+
+            <!-- Translate Button -->
+            <Button
+                android:id="@+id/btnTranslate"
+                android:text="Translate"
+                android:textAllCaps="false"
+                android:backgroundTint="#EC4899"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1027332713854",
+    "project_id": "tamil-translator-b6fc0",
+    "storage_bucket": "tamil-translator-b6fc0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027332713854:android:69d73f8feb64fb44bc572f",
+        "android_client_info": {
+          "package_name": "com.example.tamiltranslatoronboarding"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmtgtW70VPqaqd_m9j-qvnhv63ZgfC-M8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TamilTranslator" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Disable dark mode -->
+        <item name="android:forceDarkAllowed">false</item>
+
+        <!-- Light status bar icons -->
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Default app font -->
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+</resources>

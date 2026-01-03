@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F8FC">
+
+    <!-- TOP BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2563EB"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Assist"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnGrammar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Grammar Check"
+            android:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnContext"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Context Help"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnChat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="AI Chat"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Ask AI something..."
+            android:gravity="top"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Send"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2563EB"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI response will appear here"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

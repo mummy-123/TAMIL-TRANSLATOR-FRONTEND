@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Your original colors -->
+    <color name="bg_dark">#111111</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="accent_blue">#206BFF</color>
+    <color name="accent_blue_dark">#1751D9</color>
+    <color name="accent_green_start">#24C6B5</color>
+    <color name="accent_green_end">#06A77D</color>
+    <color name="text_primary">#14212B</color>
+    <color name="text_secondary">#7A7A7A</color>
+    <color name="pink">#EC4899</color>
+    <!-- Added missing colors to fix errors -->
+    <color name="gradient_start">#24C6B5</color>   <!-- matches your green start -->
+    <color name="gradient_end">#06A77D</color>     <!-- matches your green end -->
+    <color name="card_bg">#FFFFFF</color>          <!-- same as card_white -->
+    <color name="muted_text">#7A7A7A</color>       <!-- same as text_secondary -->
+
+</resources>

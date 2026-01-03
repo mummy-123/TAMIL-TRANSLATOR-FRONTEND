@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Your Email"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Enter the 6-digit code sent to your email"
+            android:textColor="#777777"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtOtp1"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/edtOtp2"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/edtOtp3"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/edtOtp4"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"/>
+
+            <!-- ✅ ADDED -->
+            <EditText
+                android:id="@+id/edtOtp5"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"/>
+
+            <!-- ✅ ADDED -->
+            <EditText
+                android:id="@+id/edtOtp6"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/accent_blue"
+            android:text="Verify"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Didn't receive code? Resend"
+            android:textColor="@color/accent_blue"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</FrameLayout>
